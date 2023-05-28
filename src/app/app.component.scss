@@ -52,3 +52,13 @@ $right-panel-width: 280px;
     flex-direction: column;
     gap: $gap;
 }
+
+@media only screen and (max-width: 750px) {
+    .finance-graph {
+        max-width: calc(100% - 0.5rem);
+    }
+
+    .expense-graph {
+        max-width: calc(100% - 0.5rem);
+    }
+}
