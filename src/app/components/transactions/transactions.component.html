@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="table-titles">
+        <span class="title">Transactions</span>
+        <span class="recent">
+            <span>Recent</span>
+            <span class="arrow"></span>
+        </span>
+    </div>
+    <div class="table-content">
+        <table>
+            <tr *ngFor="let transaction of transactionsData">
+                <td>
+                    <span class="img-name-container">
+                        <!-- <img class="circle" [src]="transaction.picture" alt="profile-picture"> -->
+                        <img class="circle" src="../../../assets/images/user2-img.jpg" alt="profile-picture">
+                        <span>{{transaction.name}}</span>
+                    </span>
+                </td>
+                <td>{{transaction.company | titlecase}}</td>
+                <td>{{transaction.registered | date: 'dd/MM/yy'}}</td>
+                <td>{{transaction.registered | date: 'hh:mm:ss a'}}</td>
+                <td>${{transaction.balance}}</td>
+                <td [ngStyle]="{color: transaction.status == 'pending' ? '#E0B1AE' : '#92C17B'}">
+                    {{transaction.status | titlecase}}
+                </td>
+                <td class="arrow-col">
+                    <span class="arrow"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

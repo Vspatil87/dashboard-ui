@@ -1,0 +1,101 @@
+.more-icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+img {
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.card-balance {
+    margin: auto;
+}
+
+.balance-title {
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    color: #808080;
+    padding: 3px 0px;
+    width: 50%;
+}
+
+.balance-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance {
+    font-size: var(--values-font-size);
+    font-weight: 600;
+    font-family: Poppins-Medium;
+    width: 50%;
+}
+
+.balance-percent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.profit-percent {
+    font-size: 9pt;
+    font-family: Poppins-Medium;
+    color: #92C17B;
+}
+
+.loss-percent {
+    font-size: 9pt;
+    font-family: Poppins-Medium;
+    color: #E0B1AE;
+}
+
+.currency-title {
+    display: flex;
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    color: #808080;
+    padding: 2px 0px;
+    justify-content: space-between;
+}
+
+.currency-values {
+    display: flex;
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    padding: 2px 0px;
+    justify-content: space-between;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+button {
+    background: #EAEDF8;
+    height: 30px;
+    border-color: transparent;
+    border-radius: 6px;
+    width: 100%;
+    color: #384C91;
+    font-size: var(--title-font-size);
+    font-family: Poppins-Medium;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    color: var(--body-color);
+    background: #2947aa;
+}

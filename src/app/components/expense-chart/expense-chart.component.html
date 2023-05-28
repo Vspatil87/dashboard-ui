@@ -1,0 +1,22 @@
+<div class="card" id="chart" *ngIf="chartOptions">
+    <div class="graph-title">
+        <span class="title">All Expenses</span>
+        <span class="monthly">
+            <span>Monthly</span>
+            <span class="arrow"></span>
+        </span>
+    </div>
+    <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [labels]="chartOptions.labels"
+        [responsive]="chartOptions.responsive" [legend]="chartOptions.legend" [dataLabels]="chartOptions.dataLabels"
+        [tooltip]="chartOptions.tooltip" [colors]="chartOptions.colors"></apx-chart>
+    <div class="graph-summary">
+        <span class="daily-title">Daily</span>
+        <span class="weekly-title">Weekly</span>
+        <span class="monthly-title">Monthly</span>
+    </div>
+    <div class="graph-summary">
+        <span class="daily-sum">$573.12</span>
+        <span class="weekly-sum">$4,791</span>
+        <span class="monthly-sum">$19,112</span>
+    </div>
+</div>

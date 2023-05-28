@@ -1,0 +1,54 @@
+$gap: 1rem;
+$right-panel-width: 280px;
+
+.main-container {
+    display: flex;
+    width: 100%;
+    gap: $gap;
+    justify-content: center;
+}
+
+.left-page-panel {
+    width: calc(100% - #{$right-panel-width});
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+.cards-container {
+    display: flex;
+    width: 100%;
+    gap: $gap;
+    flex-wrap: wrap;
+}
+
+.flex {
+    flex: 1 0 20%;
+}
+
+.graphs {
+    display: flex;
+    gap: $gap;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.finance-graph {
+    width: 100%;
+    max-width: calc(60% - 0.5rem);
+    box-sizing: border-box;
+}
+
+.expense-graph {
+    width: 100%;
+    max-width: calc(40% - 0.5rem);
+    box-sizing: border-box;
+}
+
+.right-page-panel {
+    width: $right-panel-width;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}

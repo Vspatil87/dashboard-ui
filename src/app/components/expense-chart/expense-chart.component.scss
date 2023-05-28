@@ -1,0 +1,40 @@
+.graph-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.monthly {
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    color: #808080;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.graph-summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: calc(100% - 20px);
+}
+
+.daily-title,
+.weekly-title,
+.monthly-title {
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    color: #808080;
+    width: 33%;
+}
+
+.daily-sum,
+.weekly-sum,
+.monthly-sum {
+    font-size: 12pt;
+    font-weight: 600;
+    font-family: Poppins-Medium;
+    padding: 3px 0px;
+    width: 33%;
+}

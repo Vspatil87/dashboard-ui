@@ -1,0 +1,83 @@
+.users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background-color: #EAEDF8;
+    border-radius: 50%;
+}
+
+.card-number {
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    color: #808080;
+    padding: 3px 0px;
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 4px;
+    margin-left: 8px;
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    color: #808080;
+}
+
+.input-box {
+    border: 1px solid #9898b3;
+    border-radius: 5px;
+}
+
+.input-box:focus-within {
+    box-shadow: 0 0 4px rgba(81, 203, 238, 1);
+}
+
+.visa-text {
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    color: #808080;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 0;
+}
+
+.money-button {
+    background: #2947AA;
+    height: 35px;
+    border-color: transparent;
+    border-radius: 6px;
+    color: var(--body-color);
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.draft-button {
+    background: var(--body-color);
+    height: 35px;
+    border-color: transparent;
+    border-radius: 6px;
+    color: #808080;
+    font-size: 10pt;
+    font-family: Poppins-Medium;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.right-arrow {
+    border: solid #808080;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}

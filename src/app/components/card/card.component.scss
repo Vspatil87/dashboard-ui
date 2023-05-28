@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card:hover {
+    background: linear-gradient(120deg, #3A56B5, #2744A8);
+    color: var(--body-color);
+
+    svg.svg-icon {
+        fill: var(--body-color);
+        stroke: var(--body-color);
+    }
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background-color: #EAEDF8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+}
+
+.more-icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: var(--title-font-size);
+    font-family: Poppins-Medium;
+}
+
+.card-value {
+    font-size: var(--values-font-size);
+    font-weight: 600;
+    font-family: Poppins-Medium;
+}
+
+img {
+    height: 20px;
+    width: 20px;
+}
+
+svg.svg-icon {
+    fill: #808080;
+    stroke: #808080;
+}

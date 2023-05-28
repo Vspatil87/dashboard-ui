@@ -1,0 +1,13 @@
+<div class="card" id="chart" *ngIf="chartOptions">
+    <div class="graph-title">
+        <span class="title">Finances</span>
+        <span class="monthly">
+            <span>Monthly</span>
+            <span class="arrow"></span>
+        </span>
+    </div>
+    <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+        [markers]="chartOptions.markers" [stroke]="chartOptions.stroke" [tooltip]="chartOptions.tooltip"
+        [legend]="chartOptions.legend" [dataLabels]="chartOptions.dataLabels" [fill]="chartOptions.fill"
+        [yaxis]="chartOptions.yaxis"></apx-chart>
+</div>
