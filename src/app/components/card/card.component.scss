@@ -4,16 +4,6 @@
     gap: 0.5rem;
 }
 
-.card:hover {
-    background: linear-gradient(120deg, #3A56B5, #2744A8);
-    color: var(--body-color);
-
-    svg.svg-icon {
-        fill: var(--body-color);
-        stroke: var(--body-color);
-    }
-}
-
 .circle {
     height: 35px;
     width: 35px;
@@ -46,12 +36,29 @@
     font-family: Poppins-Medium;
 }
 
-img {
-    height: 20px;
-    width: 20px;
+i {
+    color: #2744A8;
 }
 
 svg.svg-icon {
     fill: #808080;
     stroke: #808080;
+}
+
+.card:hover {
+    background: linear-gradient(120deg, #3A56B5, #2744A8);
+    color: var(--body-color);
+
+    svg.svg-icon {
+        fill: var(--body-color);
+        stroke: var(--body-color);
+    }
+
+    .circle {
+        background-color: #eaedf85c;
+    }
+
+    i {
+        color: var(--body-color);
+    }
 }

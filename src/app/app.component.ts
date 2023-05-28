@@ -8,7 +8,6 @@ import { ApiService } from 'src/services/api.service';
 })
 export class AppComponent {
   cardsData: any;
-  balance: string = '';
   constructor(private service: ApiService) { }
 
   ngOnInit() {
@@ -18,18 +17,9 @@ export class AppComponent {
   getCardsData() {
     this.service.getCardsData().subscribe(result => {
       if (result) {
-        this.cardsData = Object.keys(result).map((key: string) => {
-          return {
-            title: key,
-            value: result[key]
-          }
-        });
-        if (this.cardsData.length > 0) {
-          this.balance = this.cardsData[0].value;
-        }
+        this.cardsData = result;
       }
     });
   }
-
 
 }

@@ -1,8 +1,19 @@
 <div class="main-container">
   <div class="left-page-panel">
-    <div class="cards-container">
-      <div class="flex" *ngFor="let card of cardsData;">
-        <app-card [cardTitle]="card.title" [cardValue]="card.value"></app-card>
+    <div class="cards-container" *ngIf="cardsData">
+      <div class="flex">
+        <app-card [iconClass]="'fas fa-wallet'" [cardTitle]="'balance'" [cardValue]="cardsData.balance"></app-card>
+      </div>
+      <div class="flex">
+        <app-card [iconClass]="'fas fa-hand-holding-usd'" [cardTitle]="'income'"
+          [cardValue]="cardsData.income"></app-card>
+      </div>
+      <div class="flex">
+        <app-card [iconClass]="'fas fa-piggy-bank'" [cardTitle]="'savings'" [cardValue]="cardsData.savings"></app-card>
+      </div>
+      <div class="flex">
+        <app-card [iconClass]="'fas fa-funnel-dollar'" [cardTitle]="'expenses'"
+          [cardValue]="cardsData.expenses"></app-card>
       </div>
     </div>
     <div class="graphs">
@@ -19,7 +30,7 @@
   </div>
   <div class="right-page-panel">
     <div class="card-details">
-      <app-card-details [balance]="balance ? balance : '0000'"></app-card-details>
+      <app-card-details [balance]="cardsData ? cardsData.balance : '0000'"></app-card-details>
     </div>
     <div class="money-transfer">
       <app-transfer></app-transfer>
